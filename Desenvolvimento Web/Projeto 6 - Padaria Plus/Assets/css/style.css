@@ -1,0 +1,119 @@
+body{
+    background-color: #F4F0E5;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#container{
+    width: 700px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px;
+    border-bottom: 1px solid #de8e37 ;
+}
+
+header img{
+    width: 200px;
+    display: block;
+    margin: 0px auto;
+}
+
+header p{
+    margin: 16px 0;
+}
+
+header, section, footer, p{
+    text-align: center;
+}
+
+img{
+    width: 700px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #542f0c;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 100px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+    background-color: #de8e37;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 28px;
+    margin: 20px 0px 0px 0px;
+}
+
+h2{
+    color: #de8e37;
+    font-weight: normal;
+    margin: 10px 0px 20px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+section p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+section.secao-destaque{
+    padding: 10px 0px 20px;
+}
+
+.secao-destaque{
+    background-color: #de8e37;
+}
+
+.secao-destaque h3, .secao-destaque h4{
+    color: #ffffff;
+}
+
+.secao-destaque h4{
+    margin-top: 40px;
+}
+
+.secao-destaque p{
+    padding: 0 112px;
+    text-align: justify;
+}
+
+
+#produtos img{
+    width: 480px;
+    border-radius: 5px;
+}
+
+footer{
+    margin-bottom: 35px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+footer h3{
+    font-size: 19px;
+}
