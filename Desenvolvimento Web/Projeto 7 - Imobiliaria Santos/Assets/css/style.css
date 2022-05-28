@@ -1,0 +1,203 @@
+/* Início das diretrizes gerais */
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+/* Fim das diretrizes gerais */
+
+/* Início da formatação dos containers */
+
+    #container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header{
+        text-align: center;
+        width: 100%;
+        background-color: #b0ddfc;
+    }
+    #conteudo{
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    nav{
+        padding: 30px 0px 40px;
+    }
+
+    div{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    iframe{
+        width: 700px;
+        height: 300px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+    }
+
+    #contato{
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+    }
+
+/* Fim da formatação dos containers */
+
+/* Início da formatação das imagens */
+
+    .imagem-logo{
+        display: block;
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    .imagem-secao{
+        width: 550px;
+        margin: 30px 0;
+    }
+
+/* Fim da formação das imagens */
+
+/* Início da formatação dos links */
+
+    .link-header{
+        display: inline-block;
+        min-width: 100px;
+        padding: 5px 15px 5px 15px;
+        margin: 0px 10px;
+        text-decoration: none;
+        font-weight: normal;
+        color: #1f1918;
+        border-bottom: 2px solid #1f1918;
+    }
+
+    .link-header:hover{
+        background-color: #1f1918;
+        border-radius: 5px;
+        color: #ffffff;
+        border-bottom: 2px solid #1d80c1;
+        font-weight: normal;
+    }
+
+    .link-escritorio{
+        color: #1d80c1;
+        background-color: #ffffff;
+        padding: 5px 10px;
+        margin: 0 auto 10px;
+        border-radius: 3px;
+        min-width: 250px;
+        width: fit-content;
+        display: block;
+        text-decoration: none;
+    }
+
+    .link-escritorio:hover{
+        background-color: #1f1918;
+        color: #eaf552;
+        font-weight: bold;
+        text-decoration: none;
+        min-width: 250px;
+        border-radius: 100px;
+    }
+
+/* Fim da formatação dos links */
+
+/* Inicio da formatação dos títulos e subtítulos */
+
+    h1{
+        font-size: 35px;
+    }
+
+    h2{
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    h3{
+        font-size: 28px;
+        text-transform: uppercase;
+        padding: 50px 0px 40px 0px;
+    }
+
+/* Fim da formatação dos títulos e subtítulos */
+
+/* Início da formatação das listas */
+
+    ul{
+        text-align: left;
+        display: inline-block;
+        padding: 30px 0px 50px;
+    }
+
+    ul li{
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+/* Fim da formatação das listas */
+
+
+/* Início da formatação dos textos */
+
+    p{
+        font-size: 18px;
+        line-height: 25px;
+        text-align: justify;
+        padding: 0px 25px;
+    }
+
+    #servicos > p{
+        width: 600px;
+        margin: 0 auto;
+        line-height: 35px;
+    }
+
+    p.paragrafo-contato{
+        padding: 10px 15px;
+        width: 700px;
+        margin: 0px auto 30px;
+        border-radius: 5px;
+    }
+
+    .texto-azul{
+        color: #1d80c1;
+    }
+
+    .texto-amarelo{
+        color: #eaf552;
+    }
+
+    .texto-preto{
+        color: #1f1918;
+    }
+
+    .texto-branco{
+        color: #ffffff;
+    }
+
+    .texto-negrito{
+        font-weight: bold;
+    }
+
+/* Fim da formatação dos textos */
+
+/* Início da formatação dos backgrounds */
+
+    .fundo-azul{
+        background: linear-gradient(45deg, #56ccf2 0%, #2f80ed 100%);
+    }
+
+    .fundo-escuro{
+        background-color: #1f1918;
+    }
+
+/* Fim da formatação dos backgrounds */
