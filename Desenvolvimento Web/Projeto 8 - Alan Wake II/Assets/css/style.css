@@ -1,0 +1,114 @@
+/* Início da Formatação geral */
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/* Fim da Formatação geral */
+
+
+/* Início da Formatação dos containers */
+
+    body{
+        color: #ffffff;
+        background-image: url(../img/img1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .secao-topo{
+        width: 100%;
+        background-color: #1e6cfd;
+        height: 50px;
+        text-align: center;
+    }
+
+    .secao-conteudo{
+        width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box-compra{
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        width: 500px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+/* Fim da Formatação dos containers */
+
+
+/* Início da Formatação dos textos */
+
+    .secao-topo p{
+        line-height: 50px;
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .secao-conteudo p{
+        text-align: justify;
+        padding: 25px 0px;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .box-compra p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .texto-negrito{
+        font-weight: bold;
+    }
+
+    .texto-preto{
+        color: #000000;
+    }
+
+/* Fim da Formatação dos textos */
+
+
+/* Início da Formatação dos títulos */
+
+    h1{
+        font-size: 45px;
+        margin: 30px 0px 20px;
+        text-align: left;
+    }
+
+/* Fim da Formatação dos títulos */
+
+
+/* Início da Formatação das imagens */
+
+    .secao-conteudo img{
+        width: 720px;
+        margin: 0 auto;
+    }
+
+/* Fim da Formatação das imagens */
+
+
+/* Início da Formatação dos links */
+
+    .box-compra a{
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 7px 20px;
+        margin: 0px 0px 25px;
+        display: inline-block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+/* Fim da Formatação dos links */
