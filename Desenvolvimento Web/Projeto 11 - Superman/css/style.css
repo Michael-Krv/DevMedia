@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #c6c6c6;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:active{
+    background-color: #888888;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-c{
+    flex-direction: column;
+}
+
+.flex-r{
+    flex-direction: row;
+}
+
+.cabecalho, .rodape{
+    color: #ffffff;
+    background-color: #4711c1;
+    height: 60px;
+}
+
+#grupo-cabecalho{
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#grupo-rodape{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.larg-limit{
+    width: 960px;
+    min-width: 524px;
+    max-width: 1024px;
+}
+
+h1{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+ul li{
+    display: inline;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+ul li a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #4711c1;
+    padding: 5px 15px;
+    margin: 6px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+}
+
+ul li a:hover{
+    background-color: #4711c1;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+
+.capa{
+    height: 720px;
+    background: url('../img/capa.jpg') no-repeat center top;
+    background-size: cover;
+    margin-bottom: 36px;
+}
+
+.conteudo{
+    width: 960px;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 36px;
+}
+
+p{
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.disponibilidade img{
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.galeria{
+    overflow: scroll hidden;
+}
+
+
+.galeria::-webkit-scrollbar{
+    height: 9px;
+}
+
+.galeria::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+.galeria:hover::-webkit-scrollbar-thumb{
+    background-color: #c6c6c6;
+    border-radius: 50px;
+}
+
+.galeria::-webkit-scrollbar-thumb:active{
+    background-color: #888888;
+}
+
+
+.galeria img{
+    width: calc((100% / 3) - 15px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.rodape span{
+    font-weight: bold;
+}
+
+
+
