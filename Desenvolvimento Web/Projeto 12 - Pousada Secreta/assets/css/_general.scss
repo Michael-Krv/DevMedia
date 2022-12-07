@@ -1,0 +1,67 @@
+.flex{
+    display: flex;
+}
+
+.fdir-c{
+    flex-direction: column;
+}
+
+.fdir-r{
+    flex-direction: row;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+@mixin primaryParagraph {
+    font-size: 16px;
+    color: $primaryColor;
+    line-height: 30px;
+}
+
+@mixin secondaryParagraph {
+    font-size: 12px;
+    color: $primaryColor;
+    line-height: 20px;
+}
+
+@mixin img-cards {
+    min-width: 35%;
+    max-width: 35%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0px 5px 5px 0px;
+}
+
+@mixin colorChange {
+    @-webkit-keyframes color-change-4x {
+        0% {
+          background: #19dcea;
+        }
+        33.3333% {
+          background: #b22cff;
+        }
+        66.666% {
+          background: #ea2222;
+        }
+        100% {
+          background: #f5be10;
+        }
+      }
+      @keyframes color-change-4x {
+        0% {
+          background: #19dcea;
+        }
+        33.3333% {
+          background: #b22cff;
+        }
+        66.666% {
+          background: #ea2222;
+        }
+        100% {
+          background: #f5be10;
+        }
+      }
+      
+}

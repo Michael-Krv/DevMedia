@@ -1,0 +1,383 @@
+@import 'variables';
+@import 'general';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+
+    &::-webkit-scrollbar{
+        width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: #bababa;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: #797979;
+        }
+    }
+
+    &::-webkit-scrollbar-button{
+        height: 0px;
+    }
+}
+
+.width-limit{
+    max-width: 960px;
+}
+
+header{
+
+    position: fixed;
+    background-color: #ffffff;
+    font-weight: 400;
+    height: 55px;
+    justify-content: center;
+    width: 100%;
+    box-shadow:
+  1px 1.1px 1.3px rgba(0, 0, 0, 0.028),
+  2.6px 3.1px 3.6px rgba(0, 0, 0, 0.042),
+  6.3px 7.5px 8.7px rgba(0, 0, 0, 0.053),
+  21px 25px 29px rgba(0, 0, 0, 0.07)
+;
+
+    
+    a{
+        text-decoration: none;
+        height: 40px;
+        line-height: $lineHeightHeader;
+        color: $primaryColor;
+    }
+
+    nav{
+        column-gap: 10px;
+
+        a{
+            padding: 0px 10px;
+            line-height: $lineHeightHeader;
+            font-size: 16px;
+
+            &:hover{
+                border-radius: 5px;
+                background-color: $primaryColor;
+                color: white;
+            }
+        }
+    }
+
+    .logo{
+        text-decoration: none;
+        color: $primaryColor;
+        height: 40px;
+        line-height: $lineHeightHeader;
+        font-size: 20px;
+
+        span{
+            color: $secondaryColor;;
+        }
+
+    }
+
+    .container-header{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+.banner-home{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: $waterColor url(../img/img-fundo.jpg) no-repeat;
+    background-size: cover;
+    background-color: $waterColor;
+    height: calc(100vh - 55px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .box-banner{
+        background-color: $waterColorTranslucid;
+        width: fit-content;
+        height: fit-content;
+        padding: 40px 20px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+
+        h1{
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+
+        p{
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+    }
+}
+
+.banner-rooms{
+    width: 100%;
+    background: $waterColor url(../img/img-fundo.jpg) no-repeat;
+    background-size: cover;
+    height: calc(30vh);
+}
+
+.rooms-details{
+    justify-content: space-between;
+    margin-top: 30px;
+
+    img{
+        width: calc((100% / 3) - 10px);
+        border-radius: 5px;
+    }
+}
+
+.rooms-features{
+    color: $primaryColor;
+    
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        li{
+            min-width: 25%;
+            text-align: left;
+        }
+    }
+}
+
+
+h3{
+    font-size: 30px;
+    color: $primaryColor;
+    font-weight: normal;
+    margin: 70px 0px 30px;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: $primaryColor;
+}
+
+.welcome{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+
+    p{
+        @include primaryParagraph;
+    }
+
+    .images{
+        
+        margin-top: 30px;
+        justify-content: space-between;
+
+        .rooms{
+            width: calc((100% / 3) - 15px);
+            max-width: 30vw;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 200px;
+                border-radius: 5px;
+            }
+
+            a{
+                color: $primaryColor;
+                text-decoration: none;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 18px;
+                line-height: 70px;
+                border-bottom: 2px solid $waterColor2;
+
+                &:hover{
+                    border-color: $primaryColor;
+                }
+            }
+        }
+    }
+}
+
+.route{
+    text-align: center;
+
+    p{
+        @include primaryParagraph;
+        margin-bottom:30px;
+    }
+
+}
+
+.about{
+    text-align: center;
+    margin-bottom: 50px;
+    min-height: 90vh;
+
+    p{
+        @include primaryParagraph;
+    }
+
+    .container-cards{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+        column-gap: 30px;
+        row-gap: 30px;
+
+        .card{
+            flex-basis: 1;
+            border-radius: 5px;
+            justify-content: space-between;
+            width: calc((100% / 2) - 20px);
+            min-width: 420px;
+            min-height: 160px;
+            text-align: justify;
+            box-shadow:
+                0px 0px 0.9px -2px rgba(0, 0, 0, 0.019),
+                0.3px 0.3px 2.9px -2px rgba(0, 0, 0, 0.031),
+                1.4px 1.3px 6.9px -2px rgba(0, 0, 0, 0.042),
+                3.6px 3.4px 14.6px -2px rgba(0, 0, 0, 0.054),
+                8.3px 8px 30.8px -2px rgba(0, 0, 0, 0.071),
+                22px 21px 80px -2px rgba(0, 0, 0, 0.11)
+            ;
+    
+            h4{
+                margin-bottom: 10px;
+                padding-top: 15px;
+                padding-left: 20px
+            }
+
+            p{
+                @include secondaryParagraph;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                padding-top: 10px;
+                padding-left: 20px
+            }
+    
+            img{
+                max-width: 150px;
+                border-radius: 0px 5px 5px 0px;
+            }
+
+            .img1{
+                @include img-cards;
+                background-image: url(../img/img1.jpg);
+            }
+
+            .img2{
+                @include img-cards;
+                background-image: url(../img/img2.jpg);
+            }
+
+            .img3{
+                @include img-cards;
+                background-image: url(../img/img3.jpg);
+            }
+
+            .img4{
+                @include img-cards;
+                background-image: url(../img/img5.jpg);
+            }
+        }
+
+    }
+
+}
+
+#family-rooms{
+    margin-bottom: 60px;
+}
+
+footer{
+    width: 100%;
+    align-items: center;
+    color: #ffffff;
+    background-color: $footerColor;
+
+    p{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: normal;
+        font-size: 14px;
+    
+        &.footer-link-local, &.footer-link-tel, &.footer-link-booking{
+            padding: 0px 10px 0px 45px;
+            display: flex;
+            align-items: center;
+        }
+
+        &.footer-link-local{
+            background: url(../icons/endereco.png) no-repeat;
+            background-size: 35px;
+            background-position: left center;
+        }
+
+        &.footer-link-tel{
+            background: url(../icons/telefone.png) no-repeat;
+            background-size: 35px;
+            background-position: left center;
+        }
+
+        &.footer-link-booking{
+            background: url(../icons/calendario.png) no-repeat;
+            background-size: 35px;
+            background-position: left center;
+        }
+        
+    }
+
+    .container-footer1{
+        justify-content: space-between;
+        padding: 30px 0px;
+        border-bottom: 2px solid #24887968;
+
+        div{
+            display: flex;
+            align-items: stretch;
+            
+            width: calc((100% / 4) - 10px);
+            flex-wrap: wrap;
+        }
+    }
+
+    .container-footer2{
+        p{
+            font-size: 14px;
+            line-height: 60px;
+            font-weight: 600;
+        }
+    }
+}
+
+
