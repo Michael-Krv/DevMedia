@@ -1,0 +1,176 @@
+/* Mobile -> 320px até 425px */
+/* Tablet -> 426px até 768px */
+/* Desktop -> 769px + */
+
+@import "variables";
+
+@media (max-width: 425px){
+   
+    /* Início medias da página principal */
+    header{
+        div{
+            flex-direction: column;
+
+            nav{
+                width: 100%;
+                border-top: 1px solid $greenCMLife;
+                justify-content: center;
+            }
+        }
+    }
+
+    .top-links a{
+        font-size: 12px;
+    }
+
+    #banner{
+        max-height: 200px;
+
+        h1{
+            font-size: 18px;
+        }
+    }
+
+    #about img{
+        display: none;
+    }
+
+    #specialties{
+
+        div:last-of-type{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+
+            
+            figure{
+                min-width: calc(100% - 40px);
+            }
+        }
+    }
+
+    /* Fim medias da página principal */
+
+    /* Início medias da pagina de especialidades */
+
+    #nav-specialties{
+
+
+        ul{
+            flex-wrap: wrap;
+
+            li{
+                margin: 0;
+                padding: 0;
+                a{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+
+    .specialties-description{
+        padding: 0px;
+
+        h3, p{
+            padding: 0px 20px;
+        }
+    }
+
+    .spec-details{
+        padding: 0px !important;
+
+        div{
+            padding: 0px !important;
+
+            img{
+                display: none;
+            }
+
+            table{
+                min-width: 100%;
+            }
+        }
+    }
+
+    /* Fim medias da pagina de especialidades */
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+
+    /* Início medias da página principal */
+
+    #banner{
+        max-height: 300px;
+
+        h1{
+            font-size: 24px;
+        }
+    }
+
+    #about img{
+        margin: 0;
+        display: none;
+    }
+
+    #specialties{
+        div:last-of-type{
+            flex-wrap: wrap;
+            align-items: center;
+            row-gap: 30px;
+            column-gap: 40px;
+            padding: 0px 30px;
+
+            figure{
+                max-width: calc((100% / 2) - 20px);
+            }
+        }
+    }
+
+    /* Fim medias da página principal */
+
+    /* Início medias da página especialidades */
+
+    .spec-details{
+        div{
+            img{
+                display: none;
+            }
+
+            table{
+                min-width: 100%;                
+            }
+        }
+    }
+
+    /* .specialists-table{
+        min-width: 100%;
+        td{
+            min-width: calc(100% / 3);
+        }
+    } */
+
+    /* Fim medias da página especialidades */
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    
+    #banner{
+        max-height: 400px;
+    }
+
+    #specialties{
+        div:last-of-type{
+            align-items: center;
+            column-gap: 30px;
+            padding: 0px 30px;
+    
+            figure{
+                max-width: calc((100% / 2) - 20px);
+            }
+        }
+    }
+
+}

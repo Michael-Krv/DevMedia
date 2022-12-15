@@ -1,0 +1,378 @@
+@import "medias";
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+ }
+
+/* Início dos estilos da página principal */
+
+.flex{
+    display: flex;
+}
+
+.fdir-c{
+    flex-direction: column;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+::-webkit-scrollbar{
+    background-color: #ededed;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #a6a6a6;
+    border-radius: 100px;
+
+    &:hover{
+        background-color: #707070;
+    }
+}
+
+body{
+    font-family: 'Manrope', sans-serif;    
+}
+
+header div, section div, footer div{
+    width: 100%;
+    max-width: 1024px;
+} 
+
+iframe{
+    height: 450px;
+    width: 100%;
+}
+
+header{
+    background-color: $blueCMLife;
+    min-height: 60px;
+    padding: 0px 20px;
+    justify-content: center;
+
+    div{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        #link-home{
+            height: 60px;
+
+            img{
+                height: 60px;
+            }
+        }
+            
+        nav{
+            column-gap: 10px;
+        }
+
+        .top-links a{
+            text-decoration: none;
+            color: $white;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 8px 10px;
+
+            &:hover{
+                color: $gray;
+            }
+        }
+    }
+}
+
+section{
+    padding: 40px 20px 0px;
+    align-items: center;
+}
+
+h1{
+    color: $white;
+    font-size: 35px;
+}
+
+h2{
+    color: $gray;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+h3{
+    color: $gray;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+p{
+    color: $gray;
+    font-size: 17px;
+}
+
+li{
+    color: $gray;
+    text-align: start;
+    line-height: 22px;
+    font-size: 16px;
+    margin-left: 32px;
+}
+
+#banner{
+    background: url(../img/recepcao.png);
+    background-size: cover;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+#about{
+    align-items: center;
+    text-align: center;
+    
+    div{
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            margin-right: 20px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+
+        div{
+            align-self: stretch;
+            width: fit-content;
+        }
+    }
+}
+
+#specialties{
+
+    div{
+        text-align: center;
+        justify-content: space-around;
+        column-gap: 30px;
+    
+        &:first-child{
+            align-self: center;
+            margin-bottom: 30px;
+        }
+
+        &:last-of-type{
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+    }
+
+    figure{
+        border-radius: 5px;
+        max-width: calc((100% / 3) - 40px);
+        box-shadow:
+            0.4px 0.3px 2.2px rgba(0, 0, 0, 0.051),
+            1.1px 0.8px 5.3px rgba(0, 0, 0, 0.073),
+            2px 1.5px 10px rgba(0, 0, 0, 0.09),
+            3.6px 2.7px 17.9px rgba(0, 0, 0, 0.107),
+            6.7px 5px 33.4px rgba(0, 0, 0, 0.129),
+            16px 12px 80px rgba(0, 0, 0, 0.18)
+        ;
+
+        figcaption{
+            line-height: 40px;
+            text-align: center;
+            color: #707070;
+            font-weight: 500;
+        }
+
+        img{
+            width: 100%;
+            max-height: 250px;
+            border-radius: 5px 5px 0px 0px;
+        }
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        background-color: $blueCMLife;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        &:hover{
+            background-color: $gray;
+        }
+    }
+
+}
+
+#contact{
+    text-align: center;
+
+    p{
+        margin-bottom: 20px;
+
+        &:last-of-type{
+            margin-bottom: 30px;
+        }
+    }
+
+    iframe{
+        border-radius: 5px;
+        margin-bottom: 60px;
+    }
+}
+
+
+footer{
+    text-align: center;
+    background-color: $greenCMLife;
+    font-weight: 300;
+    align-items: center;
+    padding: 25px 0px;
+
+    p{
+        color: $white;
+        line-height: 25px;
+        font-size: 14px;
+
+        &:last-of-type{
+            font-size: 12px;
+        }
+    }
+
+    img{
+        max-width: 150px;
+        margin-bottom: 15px;
+    }
+}
+/* Fim dos estilos da página principal */
+
+
+/* Início dos estilos da página de Especialidades */
+
+#nav-specialties{
+    align-items: center;
+    background-color: $white;
+
+    ul{
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        flex-wrap: wrap;
+
+        li{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            a{
+                text-decoration: none;
+                font-size: 18px;
+                color: $gray2;
+                font-weight: 500;
+                border-bottom: 2px solid $blueCMLife;
+
+                &:hover{
+                    border-color: $gray2;
+                }
+            }
+        }
+    }
+}
+
+#know-the-specialties{
+    padding: 20px 20px 0px;
+    text-align: center;
+
+    h1{
+        color: $gray;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.specialties-description{
+    padding: 0px 0px 40px;
+    text-align: center;
+
+    .spec-details{
+        padding: 0px 20px;
+        margin-top: 40px;
+
+        &:last-of-type{
+            margin-bottom: 20px
+        }
+    }
+
+    h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    div{
+        width: 100%;
+
+        div{
+            padding: 0px 20px;
+            height: 240px;
+            margin-top: 20px;
+        }
+
+        img{
+            width: 30%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        table{
+            border-spacing: 0;
+            width: 70%;
+            height: 100%;
+            text-align: start;
+
+            td, th{
+                padding-left: 10px;
+            }
+
+
+            thead{
+                text-align: left;
+                background-color: $blueCMLife;
+                color: $white;
+                line-height: 30px;
+            }
+
+            tbody{
+
+                tr{
+                    color: $gray2;
+
+                    &:nth-of-type(odd){
+                        background-color: #dadada;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Fim dos estilos da página de Especialidades */

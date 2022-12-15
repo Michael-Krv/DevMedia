@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/* Mobile -> 320px até 425px */
+/* Tablet -> 426px até 768px */
+/* Desktop -> 769px + */
+/* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@media (max-width: 425px) {
+  /* Início medias da página principal */
+  header div {
+    flex-direction: column;
+  }
+  header div nav {
+    width: 100%;
+    border-top: 1px solid #0c6e71;
+    justify-content: center;
+  }
+  .top-links a {
+    font-size: 12px;
+  }
+  #banner {
+    max-height: 200px;
+  }
+  #banner h1 {
+    font-size: 18px;
+  }
+  #about img {
+    display: none;
+  }
+  #specialties div:last-of-type {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  #specialties div:last-of-type figure {
+    min-width: calc(100% - 40px);
+  }
+  /* Fim medias da página principal */
+  /* Início medias da pagina de especialidades */
+  #nav-specialties ul {
+    flex-wrap: wrap;
+  }
+  #nav-specialties ul li {
+    margin: 0;
+    padding: 0;
+  }
+  #nav-specialties ul li a {
+    font-size: 14px !important;
+  }
+  .specialties-description {
+    padding: 0px;
+  }
+  .specialties-description h3, .specialties-description p {
+    padding: 0px 20px;
+  }
+  .spec-details {
+    padding: 0px !important;
+  }
+  .spec-details div {
+    padding: 0px !important;
+  }
+  .spec-details div img {
+    display: none;
+  }
+  .spec-details div table {
+    min-width: 100%;
+  }
+  /* Fim medias da pagina de especialidades */
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  /* Início medias da página principal */
+  #banner {
+    max-height: 300px;
+  }
+  #banner h1 {
+    font-size: 24px;
+  }
+  #about img {
+    margin: 0;
+    display: none;
+  }
+  #specialties div:last-of-type {
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 30px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    padding: 0px 30px;
+  }
+  #specialties div:last-of-type figure {
+    max-width: calc(50% - 20px);
+  }
+  /* Fim medias da página principal */
+  /* Início medias da página especialidades */
+  .spec-details div img {
+    display: none;
+  }
+  .spec-details div table {
+    min-width: 100%;
+  }
+  /* .specialists-table{
+      min-width: 100%;
+      td{
+          min-width: calc(100% / 3);
+      }
+  } */
+  /* Fim medias da página especialidades */
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #banner {
+    max-height: 400px;
+  }
+  #specialties div:last-of-type {
+    align-items: center;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    padding: 0px 30px;
+  }
+  #specialties div:last-of-type figure {
+    max-width: calc(50% - 20px);
+  }
+}
+/* Colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Início dos estilos da página principal */
+.flex {
+  display: flex;
+}
+
+.fdir-c {
+  flex-direction: column;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  background-color: #ededed;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a6a6a6;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #707070;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+header div, section div, footer div {
+  width: 100%;
+  max-width: 1024px;
+}
+
+iframe {
+  height: 450px;
+  width: 100%;
+}
+
+header {
+  background-color: #00cad1;
+  min-height: 60px;
+  padding: 0px 20px;
+  justify-content: center;
+}
+header div {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+header div #link-home {
+  height: 60px;
+}
+header div #link-home img {
+  height: 60px;
+}
+header div nav {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+header div .top-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+header div .top-links a:hover {
+  color: rgba(0, 0, 0, 0.5490196078);
+}
+
+section {
+  padding: 40px 20px 0px;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.5490196078);
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.5490196078);
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.5490196078);
+  font-size: 17px;
+}
+
+li {
+  color: rgba(0, 0, 0, 0.5490196078);
+  text-align: start;
+  line-height: 22px;
+  font-size: 16px;
+  margin-left: 32px;
+}
+
+#banner {
+  background: url(../img/recepcao.png);
+  background-size: cover;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#about {
+  align-items: center;
+  text-align: center;
+}
+#about div {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#about div img {
+  margin-right: 20px;
+}
+#about div p {
+  margin-bottom: 20px;
+}
+#about div div {
+  align-self: stretch;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#specialties div {
+  text-align: center;
+  justify-content: space-around;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#specialties div:first-child {
+  align-self: center;
+  margin-bottom: 30px;
+}
+#specialties div:last-of-type {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+#specialties figure {
+  border-radius: 5px;
+  max-width: calc(33.3333333333% - 40px);
+  box-shadow: 0.4px 0.3px 2.2px rgba(0, 0, 0, 0.051), 1.1px 0.8px 5.3px rgba(0, 0, 0, 0.073), 2px 1.5px 10px rgba(0, 0, 0, 0.09), 3.6px 2.7px 17.9px rgba(0, 0, 0, 0.107), 6.7px 5px 33.4px rgba(0, 0, 0, 0.129), 16px 12px 80px rgba(0, 0, 0, 0.18);
+}
+#specialties figure figcaption {
+  line-height: 40px;
+  text-align: center;
+  color: #707070;
+  font-weight: 500;
+}
+#specialties figure img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 5px 5px 0px 0px;
+}
+#specialties a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00cad1;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#specialties a:hover {
+  background-color: rgba(0, 0, 0, 0.5490196078);
+}
+
+#contact {
+  text-align: center;
+}
+#contact p {
+  margin-bottom: 20px;
+}
+#contact p:last-of-type {
+  margin-bottom: 30px;
+}
+#contact iframe {
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+footer {
+  text-align: center;
+  background-color: #0c6e71;
+  font-weight: 300;
+  align-items: center;
+  padding: 25px 0px;
+}
+footer p {
+  color: #ffffff;
+  line-height: 25px;
+  font-size: 14px;
+}
+footer p:last-of-type {
+  font-size: 12px;
+}
+footer img {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+/* Fim dos estilos da página principal */
+/* Início dos estilos da página de Especialidades */
+#nav-specialties {
+  align-items: center;
+  background-color: #ffffff;
+}
+#nav-specialties ul {
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  flex-wrap: wrap;
+}
+#nav-specialties ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#nav-specialties ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #3c3c3c;
+  font-weight: 500;
+  border-bottom: 2px solid #00cad1;
+}
+#nav-specialties ul li a:hover {
+  border-color: #3c3c3c;
+}
+
+#know-the-specialties {
+  padding: 20px 20px 0px;
+  text-align: center;
+}
+#know-the-specialties h1 {
+  color: rgba(0, 0, 0, 0.5490196078);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.specialties-description {
+  padding: 0px 0px 40px;
+  text-align: center;
+}
+.specialties-description .spec-details {
+  padding: 0px 20px;
+  margin-top: 40px;
+}
+.specialties-description .spec-details:last-of-type {
+  margin-bottom: 20px;
+}
+.specialties-description h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.specialties-description div {
+  width: 100%;
+}
+.specialties-description div div {
+  padding: 0px 20px;
+  height: 240px;
+  margin-top: 20px;
+}
+.specialties-description div img {
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.specialties-description div table {
+  border-spacing: 0;
+  width: 70%;
+  height: 100%;
+  text-align: start;
+}
+.specialties-description div table td, .specialties-description div table th {
+  padding-left: 10px;
+}
+.specialties-description div table thead {
+  text-align: left;
+  background-color: #00cad1;
+  color: #ffffff;
+  line-height: 30px;
+}
+.specialties-description div table tbody tr {
+  color: #3c3c3c;
+}
+.specialties-description div table tbody tr:nth-of-type(odd) {
+  background-color: #dadada;
+}
+
+/* Fim dos estilos da página de Especialidades *//*# sourceMappingURL=style.css.map */
