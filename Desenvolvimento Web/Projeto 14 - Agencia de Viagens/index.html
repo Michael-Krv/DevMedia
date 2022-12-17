@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="flex">
+        <div class="flex">
+            <a href="#"><img src="assets/img/local-logo.png"> Agência de viagens</a>
+        </div>
+    </header>
+
+    <main class="flex fdir-c">
+        <section id="orcamento" class="flex fdir-c">
+            <div id="container-orcamento" class="flex fdir-c">
+                <div id="cab-orcamento" class="flex">
+                    <img src="assets/img/aviao.png"><h1>Solicite um orçamento</h1>
+                </div>
+                <div id="corpo-orcamento" class="flex fdir-c">
+                    <h2>Informe seus dados</h2>
+                    <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/
+                    ">
+                        <div class="campo-formulario">
+                            <label>Nome</label>
+                            <input type="text" name="nome" id="inp-nome" placeholder="Nome completo" required>
+                        </div>
+                        <div class="campo-formulario">
+                            <label>Email</label>
+                            <input type="email" name="email" id="inp-email" placeholder="Email para contato" required>
+                        </div>
+                        <div class="campo-formulario">
+                            <label>Celular (apenas números)</label>
+                            <input type="tel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" name="celular" id="inp-celular" placeholder="(xx) xxxxx-xxxx" minlength="11" maxlength="15" required>
+                        </div>
+                        <div class="flex">
+                            <div class="campo-formulario">
+                                <label>Data da ida</label>
+                                <input type="date" name="partida" id="inp-data-ida" required>
+                            </div>
+                            <div class="campo-formulario">
+                                <label>Data da volta</label>
+                                <input type="date" name="chegada" id="inp-data-volta" required>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="campo-formulario">
+                                <label>Origem</label>
+                                <select name="origem" id="sel-origem" required>
+                                    <option selected>Partindo de</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                            <div class="campo-formulario">
+                                <label>Destino</label>
+                                <select name="destino" id="sel-origem" required>
+                                    <option selected>Indo para</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="GO">Goias</option>
+                                    <option value="MA">Maranhão</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="campo-formulario">
+                            <label>Quarto com cama infantil?</label>
+                            <div class="radio-check">
+                                <div>
+                                    <input type="radio" name="infantil" id="rad-cama-infantil-sim" value="s" required>
+                                    <label for="rad-cama-infantil-sim" class="lb-side">Sim</label>
+                                </div>
+                                
+                                <div>
+                                    <input type="radio" name="infantil" id="rad-cama-infantil-nao" value="n" required>
+                                    <label for="rad-cama-infantil-nao" class="lb-side">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="campo-formulario">
+                            <label>Preferências da hospedagem</label>
+                            <div class="radio-check">
+                                <div>
+                                    <input type="checkbox" name="preferencias[]" id="chk-piscina" value="piscina">
+                                    <label for="chk-piscina" class="lb-side">Piscina</label>
+                                </div>
+    
+                                <div>
+                                    <input type="checkbox" name="preferencias[]" id="chk-wifi" value="wifi">
+                                    <label for="chk-wifi" class="lb-side">Wi-Fi</label>
+                                </div>
+    
+                                <div>
+                                    <input type="checkbox" name="preferencias[]" id="chk-garagem" value="garagem">
+                                    <label for="chk-garagem" class="lb-side">Garagem</label>
+                                </div>
+    
+                                <div>
+                                    <input type="checkbox" name="preferencias[]" id="chk-suite" value="suite">
+                                    <label for="chk-suite" class="lb-side">Suite</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <button type="submit">Solicitar orçamento</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="ofertas" class="flex fdir-c">
+            <div class="flex fdir-c">
+                <div>
+                    <h3>Ofertas</h3>
+                    <p>Com até <strong>50%</strong> de desconto.</p>
+                </div>
+                <div class="flex container-imagens-ofertas">
+                    <div class="flex fdir-c destaque">
+                        <img src="assets/img/rio.jpg" alt="">
+                        <span>Rio de Janeiro</span>
+                    </div>
+                    <div class="flex galeria">
+                        <div class="flex fdir-c">
+                            <img src="assets/img/manaus.jpg" alt="">
+                            <span>Manaus</span>
+                        </div>
+                        <div class="flex fdir-c">
+                            <img src="assets/img/saopaulo.jpg" alt="">
+                            <span>São Paulo</span>
+                        </div>
+                        <div class="flex fdir-c">
+                            <img src="assets/img/niteroi.jpg" alt="">
+                            <span>Rio de Janeiro</span>
+                        </div>
+                        <div class="flex fdir-c">
+                            <img src="assets/img/maranhao.jpg" alt="">
+                            <span>Maranhão</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex fdir-c">
+                <div>
+                    <h3>Explore a natureza</h3>
+                    <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
+                </div>
+                <div class="flex container-explore">
+                    <div>
+                        <img src="assets/img/lencol.jpg" alt="">
+                        <div>
+                            <h4>Lençois Maranhenses, Brasil</h4>
+                            <p>Ida e volta a partir de R$79</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="assets/img/goias.jpg" alt="">
+                        <div>
+                            <h4>Cachoeira Santa Bárbara, Brasil</h4>
+                            <p>Ida e volta por R$139</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex">
+        <div class="flex">
+            <div class="container-footer">
+                <h3>Contato</h3>
+                <ul>
+                    <li><img src="assets/icons/local.png">Rio de Janeiro, RJ</li>
+                    <li><img src="assets/icons/telefone.png">Telefone: (21) 99999-9999</li>
+                    <li><img src="assets/icons/email.png">E-mail: contato@agencia.com.br</li>
+                </ul>
+            </div>
+            <div class="container-footer">
+                <h3>Nossas redes sociais</h3>
+                <ul>
+                    <li><img src="assets/icons/fb.png">/AgenciaDeViagem</li>
+                    <li><img src="assets/icons/ig.png">@AgenciaDeViagem</li>
+                    <li><img src="assets/icons/tt.png">@AgenciaDeViagem</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

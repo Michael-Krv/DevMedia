@@ -1,0 +1,27 @@
+@media (max-width: 540px) {
+  #orcamento {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 40px 20px;
+  }
+  #corpo-orcamento form div.flex {
+    flex-direction: column;
+  }
+  #corpo-orcamento form .radio-check {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #corpo-orcamento form .radio-check div {
+    display: flex;
+    min-width: 100%;
+  }
+  #ofertas div.container-imagens-ofertas div.galeria div {
+    min-width: 100%;
+    max-height: 250px;
+  }
+  #ofertas div.container-imagens-ofertas div.galeria div img {
+    -o-object-position: 0px 0px;
+       object-position: 0px 0px;
+  }
+}/*# sourceMappingURL=media_up_to_540px.css.map */

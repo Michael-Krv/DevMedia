@@ -1,0 +1,17 @@
+.flex{
+    display: flex;
+}
+
+.fdir-c{
+    flex-direction: column;
+}
+
+.campo-formulario{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.lb-side{
+    padding-left: 5px;
+}
